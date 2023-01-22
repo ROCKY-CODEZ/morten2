@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>Calculator</title>
+<h2>Calculator</h2>
+
+<p><input id="num1" type="number" placeholder="Number 1">
+<input id="num2" type="number" placeholder="Number 2">
+<button onclick="calculate()">Calculate</button></p>
+
+<p>The result is: <span id="result"></span></p>
+
+<script>
+function calculate() {
+  var num1 = Number(document.getElementById("num1").value);
+  var num2 = Number(document.getElementById("num2").value);
+  document.getElementById("result").innerHTML =  num1 + num2;
+}
+</script>
+
+</body>
+</html>
